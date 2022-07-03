@@ -27,16 +27,6 @@
      <string>PushButton</string>
     </property>
    </widget>
-   <widget class="QListView" name="listView">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>41</y>
-      <width>141</width>
-      <height>731</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QScrollArea" name="scrollArea">
     <property name="geometry">
      <rect>
@@ -91,17 +81,17 @@
        <height>619</height>
       </rect>
      </property>
-     <widget class="QGraphicsView" name="graphicsView">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>881</width>
-        <height>621</height>
-       </rect>
-      </property>
-     </widget>
     </widget>
+   </widget>
+   <widget class="QListView" name="listView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>141</width>
+      <height>731</height>
+     </rect>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -113,6 +103,20 @@
      <height>26</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menu123">
+    <property name="title">
+     <string>文件</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuJJJ">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menu123"/>
+   <addaction name="menuJJJ"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
