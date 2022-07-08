@@ -17,9 +17,6 @@
    <layout class="QGridLayout" name="gridLayout_3">
     <item row="0" column="0">
      <layout class="QGridLayout" name="gridLayout_2">
-      <item row="0" column="0" alignment="Qt::AlignLeft">
-       <widget class="QListWidget" name="listWidget"/>
-      </item>
       <item row="0" column="1">
        <layout class="QGridLayout" name="gridLayout">
         <item row="0" column="0">
@@ -73,6 +70,9 @@ p, li { white-space: pre-wrap; }
          </layout>
         </item>
        </layout>
+      </item>
+      <item row="0" column="0" alignment="Qt::AlignLeft">
+       <widget class="QListWidget" name="listWidget"/>
       </item>
      </layout>
     </item>

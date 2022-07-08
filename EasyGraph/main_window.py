@@ -21,9 +21,6 @@ class Ui_MainWindow(object):
         self.gridLayout_3.setObjectName("gridLayout_3")
         self.gridLayout_2 = QtWidgets.QGridLayout()
         self.gridLayout_2.setObjectName("gridLayout_2")
-        self.listWidget = QtWidgets.QListWidget(self.centralwidget)
-        self.listWidget.setObjectName("listWidget")
-        self.gridLayout_2.addWidget(self.listWidget, 0, 0, 1, 1, QtCore.Qt.AlignLeft)
         self.gridLayout = QtWidgets.QGridLayout()
         self.gridLayout.setObjectName("gridLayout")
         self.horizontalLayout = QtWidgets.QHBoxLayout()
@@ -54,6 +51,9 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.addWidget(self.graphicsView_2)
         self.gridLayout.addLayout(self.horizontalLayout_2, 1, 0, 1, 1)
         self.gridLayout_2.addLayout(self.gridLayout, 0, 1, 1, 1)
+        self.listWidget = QtWidgets.QListWidget(self.centralwidget)
+        self.listWidget.setObjectName("listWidget")
+        self.gridLayout_2.addWidget(self.listWidget, 0, 0, 1, 1, QtCore.Qt.AlignLeft)
         self.gridLayout_3.addLayout(self.gridLayout_2, 0, 0, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
@@ -110,3 +110,7 @@ class Ui_MainWindow(object):
         self.actionrecent.setText(_translate("MainWindow", "recent"))
         self.actionschema.setText(_translate("MainWindow", "schema"))
         self.actionabout_us.setText(_translate("MainWindow", "about us"))
+
+        self.pushButton.clicked.connect(self.generateConceptionGraph())
+    def generateConceptionGraph(self):
+        print("哈哈哈")
